@@ -1,6 +1,7 @@
 package vetores.exemplos;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -17,14 +18,15 @@ public class Exemplo01 {
         Aluno aluno1 = new Aluno("Eliomar");
         
         //Adicionar elementos diversos no vetor
-        ArrayList array = new ArrayList(100);
+        ArrayList array = new ArrayList();
         array.add(aluno1);
         array.add(50.2);
         array.add(10);
         array.add("Derek");
         array.add(true);
+        
         //outra forma de adicionar elementos no array
-        //array.addAll(Arrays.asList(aluno1,aluno2,aluno3));
+        //array.addAll(Arrays.asList(aluno1,50.2,10, "Derek", true));
         
         
         System.out.println("Listando o array completo (forma simples):");
@@ -87,10 +89,11 @@ public class Exemplo01 {
         
         //com o subList(), se apagar os elementos da lista original, será refletido na sublista que gera um erro
         //ou seja, a sublista é dependente da lista original
+        //e se apagar os elementos da sublista, também serão apagados os mesmos elementos da lista original, ficando apenas o elementos que não tinham sido copiados
         System.out.print("\nApagando todos os elementos da sublista: ");
         subLista.clear();
         System.out.println(subLista);
-        System.out.println("Perceba que apagou também da lista original: " + array);
+        System.out.println("Perceba que apagou também os mesmos elementos da lista original, ficou apenas o que não tinha sido copiado: " + array);
         
         //por essa possível indesejável situação, melhor copiar os elementos de outro forma:
         ArrayList subLista2 = new ArrayList(array); 
