@@ -12,7 +12,7 @@ import vetores.model.Aluno;
     * Funcionalidades: 
     * 	sort(), reverse() 
 */
-public class Exemplo041 {
+public class Exemplo031 {
     public static void main(String[] args) {
         Aluno aluno1 = new Aluno("Eliomar");
         Aluno aluno2 = new Aluno("Derek");
