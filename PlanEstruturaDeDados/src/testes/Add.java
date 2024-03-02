@@ -17,7 +17,7 @@ public class Add {
 		int valorAdd = 20;
 		int posicaoUltimo = 3;
 			
-		//SE conhecer a posição do ultimo elemento...
+		//SE conhecer a posiÃ§Ã£o do ultimo elemento...
 		for(int i=posicaoUltimo; i >= posicaoAdd; i--) {
 			array[i+1] = array[i];
 			System.out.println(Arrays.toString(array));
@@ -26,7 +26,7 @@ public class Add {
 		System.out.println(Arrays.toString(array));
 		
 		
-		//ou se não conhecer a posição do ultimo...
+		//ou se nï¿½o conhecer a posiï¿½ï¿½o do ultimo...
 		for(int i=array.length-1; i >= posicaoAdd; i--) {
 			array[i] = array[i-1];
 			System.out.println(Arrays.toString(array));
