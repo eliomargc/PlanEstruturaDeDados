@@ -12,5 +12,7 @@ public class Temp {
 		lista.add(100);
 		
 		lista.remove(0);
+		
+		//adicionei comentário
 	}
 }
