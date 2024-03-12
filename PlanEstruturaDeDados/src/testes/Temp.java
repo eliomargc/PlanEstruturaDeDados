@@ -11,7 +11,7 @@ public class Temp {
 		lista.add(10);
 		lista.add(100);
 		
-		lista.remove(0);
+		//lista.remove(0);
 	
 	}
 }
